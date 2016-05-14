@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-style: italic;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* HEADER AREA STYLES */
+
+header {
+  /*background-image: url("img/20151111_132242.jpg");*/
+  background-image: url("img/DSC08863-1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+  position: relative;
+  padding-top: 5px;
+  color: #444;
+}
+
+.dev-name {
+  margin-top: 60px;
+  font-size: 4em;
+  color: #ccc;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 1px 1px 5px #000;
+  clear: right;
+}
+
+.dev-name,
+.dev-path {
+  margin-left: 30px;
+}
+
+.dev-path {
+  margin-top: 10px;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+header blockquote {
+  float: right;
+  text-align: right;
+  margin-top: 0;
+  text-shadow: 0px 0px 1px #fff;
+}
+
+nav {
+  position: absolute;
+  bottom: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.menu {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.menu > li {
+  float: left;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+}
+
+.menu a {
+  font-style: normal;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+nav li a,
+.menu > li:first-child {
+  display: block;
+  padding: 5px 20px;
+}
+
+.menu > li:first-child {
+  background-color: rgba(255, 165, 0, 0.8);
+  color: #000;
+  border-color: transparent;
+}
+
+nav li.dropdown {
+  padding: 5px 20px;
+}
+
+.arrow-down {
+  padding-left: 8px;
+}
+
+.submenu {
+  position: absolute;
+  top: 29px; /* dropdown */
+  /*bottom: 29px; /* popup */
+  left: 0;
+  white-space: nowrap;
+  opacity: 0;
+  z-index: -10;
+  height: 0;
+  transition: height 0.5s, opacity 0.3s;
+}
+
+.submenu li {
+  text-align: left;
+  padding: 3px 0;
+  border: 1px solid transparent;
+}
+
+nav li:hover {
+  background-color: rgba(255, 165, 0, 0.8);
+  color: #000;
+  border-color: #000;
+}
+
+.dropdown:hover .submenu {
+  background-color: inherit;
+  height: 295px;
+  opacity: 1;
+  z-index: 50;
+}
+
+.submenu li:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ffa500;
+}
+
+/* MAIN CONTENT STYLES */
+
+.main {
+  padding: 20px 50px;
+  background-color: #222;
+  color: #222;
+  text-shadow: 1px 1px 3px #fff;
+}
+
+.main h1 {
+  font-size: 2.8em;
+  margin: 80px 0;
+  text-align: center;
+}
+
+.main h2 {
+  font-size: 1.5em;
+}
+
+.main > section {
+  background-color: #ddd;
+  padding: 20px 50px 30px;
+  margin: 10px auto;
+  min-width: 400px;
+  max-width: 1000px;
+  width: 80%;
+}
+
+.main section::after {
+  content: "";
+  display: block;
+  clear: right;
+}
+
+.main a {
+  color: inherit;
+}
+
+.project-thumb {
+  float: right;
+  width: 200px;
+  height: 170px;
+  overflow: hidden;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  border: 2px solid #555;
+  box-shadow: 0 0 4px 0 #555;
+}
+
+.project-thumb:hover {
+  border-style: dotted;
+}
+
+.project-thumb img {
+  width: 100%;
+}
+
+.project-forms section {
+  border-top: 2px solid #ccc;
+}
+
+/* FOOTER AREA STYLES */
+
+footer {
+  background-color: #ddd;
+}
+
+footer p {
+  text-align: center;
+  line-height: 100px;
+  margin: 0;
+  color: #888;
+}
+
+.github-logo {
+  width: 30px;
+  vertical-align: middle;
+}
