@@ -85,7 +85,6 @@ nav ul::after {
   text-transform: uppercase;
   text-align: center;
   border-left: 2px solid transparent;
-  border-right: 2px solid transparent;
 }
 
 .menu a {
@@ -134,10 +133,15 @@ nav li.dropdown {
   border: 1px solid transparent;
 }
 
-nav li:hover {
+nav li:hover,
+nav li.current {
   background-color: rgba(255, 165, 0, 0.8);
   color: #000;
   border-color: #000;
+}
+
+nav li.current a:hover {
+  cursor: default;
 }
 
 .dropdown:hover .submenu {
@@ -150,6 +154,10 @@ nav li:hover {
 .submenu li:hover {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid #ffa500;
+}
+
+.dropdown .submenu li a:hover{
+  cursor: pointer;
 }
 
 /* MAIN CONTENT STYLES */
