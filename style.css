@@ -60,6 +60,7 @@ header blockquote {
 nav {
   position: absolute;
   bottom: 0;
+  width: 100%;
 }
 
 nav ul {
@@ -85,6 +86,10 @@ nav ul::after {
   text-transform: uppercase;
   text-align: center;
   border-left: 2px solid transparent;
+}
+
+#home {
+  float: right;
 }
 
 .menu a {
