@@ -17,32 +17,39 @@
     <h2 class="dev-path">JavaScript Developer</h2>
     <h1 class="dev-name">Vojislav Grujić</h1>
 
-    <nav>
-      <ul class="menu">
-        <li>Projects: </li>
-        <li><a href="buttons.html">Buttons</a></li>
-        <li><a href="profile-card.html">Profile Card</a></li>
-        <li class="dropdown">
-          <span>Forms</span>
-          <ul class="submenu">
-            <li><a href="forms.html#signup">Sign Up</a></li>
-            <li><a href="forms.html#search">Search</a></li>
-            <li><a href="forms.html#color-form">Color Picker</a></li>
-            <li><a href="forms.html#login">Login</a></li>
-            <li><a href="forms.html#questionnaire">Questionnaire</a></li>
-            <li><a href="forms.html#address">Address</a></li>
-            <li><a href="forms.html#schedule">Schedule</a></li>
-            <li><a href="forms.html#credit-card">Credit Card</a></li>
-          </ul>
-          <span class="arrow-down">&#9662;</span>
-        </li>
-        <li><a href="calculator.html">Calculator</a></li>
-        <li class="current"><a href="#">Product Listing</a></li>
-        <li id="home"><a href="index.html">HOME</a></li>
-      </ul>
-    </nav>
   </header>
   <section class="main">
+
+    <nav>
+      <ul class="menu">
+        <li class="clearfix">
+          <label class="main-menu-toggle" for="main-menu">Projects &gt;</label>
+          <input type="checkbox" name="main-menu" id="main-menu" class="hidden">
+          <ul class="main-menu">
+            <li class="link"><a href="buttons.html">Buttons</a></li>
+            <li class="link"><a href="profile-card.html">Profile Card</a></li>
+            <li class="link dropdown">
+              <input type="checkbox" name="submenu" id="submenu" class="hidden">
+              <label for="submenu">Forms <span class="arrow-down">&#9662;</span></label>
+              <ul class="submenu">
+                <li><a href="forms.html#signup">Sign Up</a></li>
+                <li><a href="forms.html#search">Search</a></li>
+                <li><a href="forms.html#color-form">Color Picker</a></li>
+                <li><a href="forms.html#login">Login</a></li>
+                <li><a href="forms.html#questionnaire">Questionnaire</a></li>
+                <li><a href="forms.html#address">Address</a></li>
+                <li><a href="forms.html#schedule">Schedule</a></li>
+                <li><a href="forms.html#credit-card">Credit Card</a></li>
+              </ul>
+            </li>
+            <li class="link"><a href="calculator.html">Calculator</a></li>
+            <li class="link current"><a href="#">Product Listing</a></li>
+          </ul>
+          <span id="home" class="link"><a href="index.html">HOME</a></span>
+        </li>
+      </ul>
+    </nav>
+
     <h1>Introduction to CSS &mdash; Project Assignment 6:<br> Product Listing Page</h1>
 
     <section class="project project-product-listing">

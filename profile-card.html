@@ -17,36 +17,43 @@
     <h2 class="dev-path">JavaScript Developer</h2>
     <h1 class="dev-name">Vojislav Grujić</h1>
 
-    <nav>
-      <ul class="menu">
-        <li>Projects: </li>
-        <li><a href="buttons.html">Buttons</a></li>
-        <li class="current"><a href="#">Profile Card</a></li>
-        <li class="dropdown">
-          <span>Forms</span>
-          <ul class="submenu">
-            <li><a href="forms.html#signup">Sign Up</a></li>
-            <li><a href="forms.html#search">Search</a></li>
-            <li><a href="forms.html#color-form">Color Picker</a></li>
-            <li><a href="forms.html#login">Login</a></li>
-            <li><a href="forms.html#questionnaire">Questionnaire</a></li>
-            <li><a href="forms.html#address">Address</a></li>
-            <li><a href="forms.html#schedule">Schedule</a></li>
-            <li><a href="forms.html#credit-card">Credit Card</a></li>
-          </ul>
-          <span class="arrow-down">&#9662;</span>
-        </li>
-        <li><a href="calculator.html">Calculator</a></li>
-        <li><a href="product-listing.html">Product Listing</a></li>
-        <li id="home"><a href="index.html">HOME</a></li>
-      </ul>
-    </nav>
   </header>
   <section class="main">
+
+    <nav>
+      <ul class="menu">
+        <li class="clearfix">
+          <label class="main-menu-toggle" for="main-menu">Projects &gt;</label>
+          <input type="checkbox" name="main-menu" id="main-menu" class="hidden">
+          <ul class="main-menu">
+            <li class="link"><a href="buttons.html">Buttons</a></li>
+            <li class="link current"><a href="#">Profile Card</a></li>
+            <li class="link dropdown">
+              <input type="checkbox" name="submenu" id="submenu" class="hidden">
+              <label for="submenu">Forms <span class="arrow-down">&#9662;</span></label>
+              <ul class="submenu">
+                <li><a href="forms.html#signup">Sign Up</a></li>
+                <li><a href="forms.html#search">Search</a></li>
+                <li><a href="forms.html#color-form">Color Picker</a></li>
+                <li><a href="forms.html#login">Login</a></li>
+                <li><a href="forms.html#questionnaire">Questionnaire</a></li>
+                <li><a href="forms.html#address">Address</a></li>
+                <li><a href="forms.html#schedule">Schedule</a></li>
+                <li><a href="forms.html#credit-card">Credit Card</a></li>
+              </ul>
+            </li>
+            <li class="link"><a href="calculator.html">Calculator</a></li>
+            <li class="link"><a href="product-listing.html">Product Listing</a></li>
+          </ul>
+          <span id="home" class="link"><a href="index.html">HOME</a></span>
+        </li>
+      </ul>
+    </nav>
+
     <h1>Introduction to CSS &mdash; Project Assignment 3:<br> Aside Profile Card</h1>
 
     <section class="project project-profile-card">
-      <h2><a href="http://gruximillian.github.io/profile-card" target="_blank">Profiles.ModernDeveloper Sidebar</a></h2>
+      <h2><a href="http://gruximillian.github.io/profile-card" target="_blank">Profiles.BovAcademy Sidebar</a></h2>
 
       <div class="project-thumb">
         <a href="http://gruximillian.github.io/profile-card" target="_blank"><img src="img/profile-card.png"></a>
